@@ -6,6 +6,7 @@ public class Course {
     private ArrayList<Student> students;
     private Queue<Student> waitingList = new LinkedList<>();
     private int maxStudents;
+    private LinkedList<String> feed = new LinkedList<>();
 
     public Course(String courseName, Professor professor) throws InvalidCourseException {
         if (courseName == null || courseName.isEmpty()) {
