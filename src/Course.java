@@ -4,6 +4,8 @@ public class Course {
     private String courseName;
     private Professor professor;
     private ArrayList<Student> students;
+    private Queue<Student> waitingList = new LinkedList<>();
+    private int maxStudents;
 
     public Course(String courseName, Professor professor) throws InvalidCourseException {
         if (courseName == null || courseName.isEmpty()) {
