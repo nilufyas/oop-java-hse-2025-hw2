@@ -14,6 +14,7 @@ public class Course {
         this.courseName = courseName;
         this.professor = professor;
         this.students = new ArrayList<>();
+        this.waitingList = new LinkedList<>();
     }
 
     public void addStudent(Student student) {
