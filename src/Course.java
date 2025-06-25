@@ -53,5 +53,14 @@ public class Course {
     public int getWaitingListSize() {
         return waitingList.size();
     }
+    @Override
+    public void publish(String message) {
+        feed.add(message);
+    }
+
+    @Override
+    public List<String> getFeed() {
+        return feed;
+    }
 
 }
