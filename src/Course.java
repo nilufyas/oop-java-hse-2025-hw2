@@ -42,4 +42,15 @@ public class Course {
             System.out.println(" - " + student.getDetails());
         }
     }
+
+    public void processWaitingList() {
+        while (students.size() < maxStudents && !waitingList.isEmpty()) {
+            students.add(waitingList.poll());
+        }
+    }
+
+    public int getWaitingListSize() {
+        return waitingList.size();
+    }
+
 }
