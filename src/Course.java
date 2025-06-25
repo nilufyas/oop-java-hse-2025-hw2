@@ -17,7 +17,12 @@ public class Course {
     }
 
     public void addStudent(Student student) {
-        students.add(student);
+        if (students.size() < maxStudents) {
+            students.add(student);
+        } else {
+            waitingList.add(student);
+        }
+
     }
 
     public void removeStudent(Student student) {
