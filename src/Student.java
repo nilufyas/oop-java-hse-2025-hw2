@@ -10,4 +10,12 @@ public class Student extends UniversityMember {
     public String getDetails() {
         return "ID студента: " + id + ", Имя: " + name + ", специальность: " + major;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
